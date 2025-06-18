@@ -8,8 +8,9 @@ export default function TabLayout() {
         name="(menu)"
         options={{
           title: "menu",
+          headerShown: false,
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="home" color={color} />
+            <FontAwesome size={24} name="cutlery" color={color} />
           ),
         }}
       />
@@ -18,7 +19,7 @@ export default function TabLayout() {
         options={{
           title: "favourites",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="cog" color={color} />
+            <FontAwesome size={24} name="heart" color={color} />
           ),
         }}
       />
