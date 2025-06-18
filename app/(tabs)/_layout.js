@@ -18,6 +18,7 @@ export default function TabLayout() {
         name="favourites"
         options={{
           title: "favourites",
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <FontAwesome size={24} name="heart" color={color} />
           ),
