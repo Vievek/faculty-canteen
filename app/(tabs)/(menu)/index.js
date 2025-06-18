@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList, Text, View, TouchableOpacity, Image } from "react-native";
-import menuData from "../../menuData";
+import menuData from "../../../menuData";
 import { useRouter } from "expo-router";
 
 export default function Menu() {
@@ -10,7 +10,7 @@ export default function Menu() {
       data={menuData}
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
-        <TouchableOpacity onPress={() => router.push(`/menu/${item.id}`)}>
+        <TouchableOpacity onPress={() => router.push(`/${item.id}`)}>
           <View style={{ flexDirection: "row", padding: 16 }}>
             <Image
               source={{ uri: item.image }}
